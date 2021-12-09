@@ -48,7 +48,7 @@ def is_kuki(chat_id):
 
 
 
-BOT_ID = 2025517298
+BOT_ID = DIRECT
 
 @bot.on_message(
     filters.command(["addchat", f"addchat@KomiSanRobot"])
@@ -103,7 +103,7 @@ async def kuki(_, message):
         text = message.text
         Kuki = requests.get(f"https://www.kukiapi.xyz/api/apikey=KUKIwrLK87gL6/kuki/moezilla/message={text}").json()
         nksamax = f"{Kuki['reply']}"
-        if "Komi" in text or "komi" in text or "KOMI" in text:
+        if "mikey" in text or "Mikey" in text or "MIKEY" in text:
             await bot.send_chat_action(message.chat.id, "typing")
         
         await message.reply_text(nksamax)
