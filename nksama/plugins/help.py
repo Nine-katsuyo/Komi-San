@@ -5,11 +5,11 @@ from pyrogram.types.bots_and_keyboards.inline_keyboard_markup import InlineKeybo
 from nksama import bot ,help_message
 from typing import List , Any
 
-HELPP_TEXT = """Yo, Komi here a telegram management bot written on pyrogram library 
+HELPP_TEXT = """Yo, [mikey](https://telegra.ph/file/1579d67a4aa11152eacff.jpg) here a telegram management bot written on pyrogram library 
 
 Check the following buttons for more info 
 
-Report bugs at - @komisan_support"""
+Report bugs at - @Mano_sanjiro_support"""
 
 @bot.on_message(filters.command('help') | filters.command('help@KomiSanRobot'))
 def bothelp(_,message):
@@ -24,6 +24,6 @@ def bothelp(_,message):
     else:
         bot.send_photo(message.chat.id , "https://telegra.ph/file/769474503795f6d4f406c.jpg" ,  caption=HELPP_TEXT , reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("Pm me for more details"  , url="t.me/komisanrobot?start=help")]
+                [InlineKeyboardButton("Pm me for more details"  , url="t.me/Sanjiro_probot?start=help")]
             
             ]))
