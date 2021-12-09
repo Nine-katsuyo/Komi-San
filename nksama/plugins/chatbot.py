@@ -48,7 +48,7 @@ def is_kuki(chat_id):
 
 
 
-BOT_ID = DIRECT
+BOT_ID = 5032865399
 
 @bot.on_message(
     filters.command(["addchat", f"addchat@KomiSanRobot"])
