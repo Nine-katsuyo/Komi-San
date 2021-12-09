@@ -110,4 +110,4 @@ async def kuki(_, message):
     
     
     except Exception as e:
-        await bot.send_message(-1001646296281 , f"error in chatbot:\n\n{e}")
+        await bot.send_message(-1001747095926 , f"error in chatbot:\n\n{e}")
