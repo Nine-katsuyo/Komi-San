@@ -1,6 +1,6 @@
 import threading
 
-from nksama.modules.sql import BASE, SESSION
+from nksama.plugins.sql import BASE, SESSION
 from sqlalchemy import Column, String, UnicodeText, distinct, func
 
 
