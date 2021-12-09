@@ -35,7 +35,7 @@ def send_rules(update, chat_id, from_pm=False):
             "The group admins haven't set any rules for this chat yet. "
             "This probably doesn't mean it's lawless though...!",
         )
-   @bot.on_message(filters.command('rules')
+   @bot.on_message(filters.command('rules'))
     def rules:
         update.effective_message.reply_text(
             "Please click the button below to see the rules.",
