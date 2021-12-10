@@ -2,7 +2,7 @@ from nksama import bot
 from pyrogram import filters
 
 @bot.on_message(filters.command('setrules'))
-def set_rules(update: Update, context: CallbackContext):
+def set_rules
     chat_id = update.effective_chat.id
     msg = update.effective_message  # type: Optional[Message]
     raw_text = msg.text
