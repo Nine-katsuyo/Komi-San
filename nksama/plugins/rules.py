@@ -2,7 +2,7 @@ from nksama import bot
 
 from pyrogram import filters
 
-@bot.on_message(custom_filter.command(commands=('setrules')))
+@bot.on_message(filters.command(commands=('setrules')))
 
 async def set_rules(client, message):
 
