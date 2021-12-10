@@ -32,9 +32,4 @@ musicbot = Client(
     api_hash=os.environ['API_HASH'],
 )
 
-try:
-  StellaMongoClient = MongoClient(config.database.database_url)
-  StellaDB = StellaMongoClient.stella_mongo
-except:
-  sys.exit(f"{BOT_NAME}'s database is not running!")
 help_message = []
