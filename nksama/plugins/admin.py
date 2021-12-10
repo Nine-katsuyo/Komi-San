@@ -8,7 +8,7 @@ from nksama.plugins.helpers import call_back_in_filter
 from pyrogram import filters
 from nksama import help_message
 
-sudos = [1915921298 , 1802324609 , 1633375527 , 1635151800]
+sudos = [1791795037, 2043468602]
 
 def is_admin(group_id: int, user_id: int):
     try:
@@ -46,13 +46,13 @@ def ban(_,message):
             [InlineKeyboardButton("Unban" , callback_data=f"admin:unban:{message.reply_to_message.from_user.id}")],
         ]))
         
-    elif reply.from_user.id == 825664681:
+    elif reply.from_user.id == 1963466785:
         message.reply('This Person is my owner!')
     
     elif reply.from_user.id in sudos:
-        message.reply("This Person is my sudo user !")
+        message.reply("This Person is one of the sudos!")
         
-    elif message.from_user.id == 825664681 or message.from_user.id in sudos:
+    elif message.from_user.id == 1963466785 or message.from_user.id in sudos:
         user = reply.from_user.username if not None else reply.from_user.id
         bot.kick_chat_member(message.chat.id , message.reply_to_message.from_user.id)
         bot.send_message(message.chat.id ,f"Banned! {user}" , parse_mode="markdown" ,reply_markup=InlineKeyboardMarkup([
