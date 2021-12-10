@@ -13,3 +13,6 @@ telegraph
 odmantic
 tracemoepy
 cachetools
+pyrogram
+telethon==1.16.4
+python-telegram-bot==12.8
