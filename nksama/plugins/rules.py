@@ -10,7 +10,7 @@ def setrules(_,message):
 
   message.reply('
 
-def s
+
                 
                 
 
