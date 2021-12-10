@@ -1,5 +1,5 @@
 from nksama import bot 
-
+from nksama.db import database as db
 from pyrogram import filters
 
 @bot.on_message(filters.command(commands=('setrules')))
@@ -36,7 +36,7 @@ async def set_rules(client, message):
 
     get_rules = message.text.markdown[len(message.command[0]) + 2 :]
 
-    set_rules_db(chat_id, get_rules)
+     db(chat_id, get_rules)
 
     await message.reply(
 
