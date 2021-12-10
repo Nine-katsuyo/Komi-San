@@ -1,4 +1,5 @@
 from pyrogram import filters
+from nksama.utils import custom_filters
 from pyrogram.types import ChatPermissions
 from pyrogram.errors import (
     UsernameInvalid,
