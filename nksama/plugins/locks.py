@@ -85,3 +85,6 @@ async def view_perm(client, message):
                 await message.reply("`Error!`\n" f"**Log:** `{e}`")
     else:
         await message.delete()
+handlers = [
+MessageHandler(view_perm, custom_filters.command('locks')),
+]
