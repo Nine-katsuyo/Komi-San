@@ -4,7 +4,7 @@ from pyrogram import filters
 
 @bot.on_message(custom_filter.command(commands=('setrules')))
 
-def set_rules(client, message):
+async def set_rules(client, message):
 
     
 
