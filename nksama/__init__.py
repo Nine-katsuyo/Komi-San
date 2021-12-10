@@ -2,6 +2,7 @@ from pyrogram import filters , Client
 from redis import Redis
 from pymongo import MongoClient
 import os 
+import sys
 
 bot = Client(
     'bot',
