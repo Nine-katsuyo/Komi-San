@@ -9,7 +9,7 @@ from pyrogram.errors import (
     FloodWait,
 )
 
-from butler.helpers.admincheck import admin_check
+from nksama.helpers.admincheck import admin_check
 
 __MODULE__ = "Locks"
 __HELP__ = """
