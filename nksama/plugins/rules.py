@@ -12,9 +12,7 @@ async def set_rules(client, message):
 
     chat_title = message.chat.title
 
-    if not await (message, permissions='can_change_info'):
-
-        return
+   
 
     
 
