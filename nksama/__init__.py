@@ -6,22 +6,6 @@ import os
 import sys
 from nksama.mikeygban import mikeyClient
 
-OWNER_ID = config.settings.owner
-
-BOT_ID = config.telegram.bot.id
-
-BOT_NAME = config.telegram.bot.name
-
-BOT_USERNAME = config.telegram.bot.username
-
-LOG_CHANNEL = config.settings.log.chat_id
-
-SUDO_USERS = config.settings.sudo_users
-
-PREFIX = config.settings.commands.prefix
-
-BACKUP_CHAT = config.settings.backup.chat_id
-
 
 
 bot = Client(
