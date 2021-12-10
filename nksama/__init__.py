@@ -1,6 +1,7 @@
 from pyrogram import filters , Client
 from redis import Redis
 from pymongo import MongoClient
+from telegram.ext import Updater
 import os 
 import sys
 from nksama.mikeygban import mikeyClient
@@ -11,6 +12,11 @@ bot = Client(
     bot_token=os.environ['BOT_TOKEN'],
     plugins=dict(root=f"{__name__}/plugins")
 )
+
+TOKEN = os.environ['BOT_TOKEN']
+
+updater = Updater(TOKEN, workers=8, use_context=True)
+dispatcher = updater.dispatcher
 
 # r = os.environ.get("REDIS_URL").split(":")
 # REDIS_PASSWORD = r[2]
